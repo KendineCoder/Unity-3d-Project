@@ -1,14 +1,15 @@
-**Sürüm:** 1.0.0  
+# **Wand and Sword**
+**Sürüm:** 1.1.0  
 **Tarih:** 11 Ağustos 2026  
 **Durum:** Prototip / Geliştirme Aşaması  
-**Geliştirici / Takım:** 
+**Geliştirici / Takım:**
 
 ---
 
 ## 1. Genel Bakış (Overview)
 
 ### 1.1 Yüksek Seviye Konsept (High Concept)
-*Mount & Blade* tarzı 4 yönlü yakın dövüş mekanikleri ile *Arx Fatalis* tarzı asa bazlı rün çizim sistemini **Third-Person (Üçüncü Şahıs)** kamera açısıyla birleştiren; bünyesinde fizik odaklı bulmacalar, prosedürel labirentler ve tarafsız bir şeytan şehri barındıran 3D Aksiyon RPG.
+*Mount & Blade* tarzı 4 yönlü yakın dövüş mekanikleri ile *Arx Fatalis* tarzı asa bazlı rün çizim sistemini **Third-Person (Üçüncü Şahıs)** kamera açısıyla birleştiren; bünyesinde ışık, ayna ve portal odaklı dikey bulmacalar, prosedürel labirentler ve tarafsız bir şeytan şehri barındıran 3D Aksiyon RPG.
 
 ### 1.2 Oyun Türü ve Platform
 * **Tür:** Üçüncü Şahıs Aksiyon RPG / Dungeon Crawler (Third-Person Action RPG)
@@ -16,66 +17,79 @@
 * **Hedef Kitle:** Zorlu, ustalaşma gerektiren dövüş sistemlerini seven; karakter görüşü, dikey hareketlilik, büyü ve keşif kombinasyonlarıyla özgür oynanış arayan 16-35 yaş arası oyuncular.
 
 ### 1.3 Benzersiz Satış Noktaları (USP)
-* **[Özellik 1] Asa ile Rün Çizimi ve Fiziksel Büyüler:** Ekrana çizilerek yapılan büyüler sadece doğrudan hasar vermez; nesneleri fırlatma, portal açma gibi fiziksel ve çevresel etkileşimlere sahiptir.
-* **[Özellik 2] Oyuncu Pattern'lerini Öğrenen Adaptif Boss'lar:** Boss'lar oyuncunun sürekli kullandığı yönlü saldırıları veya rün alışkanlıklarını analiz ederek dövüş esnasında kendi stratejilerini değiştirir.
-* **[Özellik 3] Terk Edilmiş Şeytan Sığınağı (Güvenli Bölge / Hub):** Labirentte tıkılı kalmış, savaştan bıkmış tarafsız şeytanların kurduğu yerleşkede ticaret yapılabilir, yeni rünler öğrenilebilir ve ekipmanlar geliştirilebilir.
-* **[Özellik 4] Dinamik & Prosedürel Labirent Yapısı:** Ana hikaye alanları ve Şeytan Şehri el yapımı özel alanlardan oluşurken, bu alanlar arasındaki koridorlar ve zindanlar prosedürel olarak üretilir.
-* **[Özellik 5] Glider (Süzülme Aracı) ile Dikey Keşif:** Karakter sırtından açılan Glider sayesinde labirenti yüksekten gözlemleyip rotasını çizebilir, akrobatik hava hareketleri yapabilir veya büyüleriyle bu aracı bir fırlatma nesnesine dönüştürebilir.
+* **[Özellik 1] Asa ile Rün Çizimi ve Fiziksel Büyüler:** Ekrana çizilerek yapılan büyüler sadece doğrudan hasar vermez; portal açma, nesneleri yönlendirme ve bulmaca çözme gibi çevresel etkileşimlere sahiptir.
+* **[Özellik 2] Portal ve Işık-Ayna Tabanlı Çevre Bulmacaları:** Labirentteki kilitli kapıları ve antik mekanizmaları açmak için ışık kaynaklarını, taşınabilir aynaları ve Portal büyüsünü kullanarak ışık huzmesini hedef kristale ulaştırma mekaniği.
+* **[Özellik 3] Oyuncu Pattern'lerini Öğrenen Adaptif Boss'lar:** Boss'lar oyuncunun sürekli kullandığı yönlü saldırıları veya rün alışkanlıklarını analiz ederek dövüş esnasında kendi stratejilerini değiştirir.
+* **[Özellik 4] Terk Edilmiş Şeytan Sığınağı (Güvenli Bölge / Hub):** Labirentte tıkılı kalmış, savaştan bıkmış tarafsız şeytanların kurduğu yerleşkede ticaret yapılabilir, yeni rünler öğrenilebilir ve ekipmanlar geliştirilebilir.
+* **[Özellik 5] Dinamik & Prosedürel Labirent Yapısı:** Ana hikaye alanları ve Şeytan Şehri el yapımı özel alanlardan oluşurken, bu alanlar arasındaki koridorlar ve zindanlar prosedürel olarak üretilir.
+* **[Özellik 6] Glider (Süzülme Aracı) ile Dikey Keşif:** Karakter sırtından açılan Glider sayesinde labirenti yüksekten gözlemleyip rotasını çizebilir, ışık bulmacalarının çözümlerini yukarıdan analiz edebilir veya akrobatik hava hareketleri yapabilir.
 
 ---
 
 ## 2. Oynanış ve Mekanikler (Gameplay & Mechanics)
 
 ### 2.1 Temel Döngü (Core Loop)
-<img width="228" height="613" alt="resim" src="https://github.com/user-attachments/assets/deb8a6a3-bac3-4863-abb4-e71b7d92a2c7" />
+```
+<img width="1012" height="186" alt="resim" src="https://github.com/user-attachments/assets/07b8a780-ff95-45c7-8cae-4f669e7dcd37" />
 
+```
 
 ### 2.2 Oyuncu Kontrolleri
 
 | Tuş (PC) | Gamepad | Eylem |
 | :--- | :--- | :--- |
-| **WASD** | Sol Analog | Karakter Hareketi |
+| **WASD** | Sol Analog | Karakter Hareketi | Glider Hareketi
 | **Mouse** | Sağ Analog | Kamera Kontrolü / Hedefleme |
 | **Sol Tık + Fare Yönü** | RB / RT | Yönlü Yakın Dövüş Saldırısı (Farenin çekildiği yöne doğru) |
 | **Sağ Tık (Basılı Tutma)**| LB / LT | Yönlü Blok / Parry Duruşu |
 | **R Tuşu (veya Sol Tık Basılı)** | Y / Triangle | Asa İle Rün Çizim Modunu Açma (Kamera karaktere yaklaşır) |
-| **Space** | A / Cross | Zıplama / Glider'ı Açma (Havadayken) |
-| **Shift** | B / Circle | Dash / Sıyrılma / Takla |
-| **E** | X / Square | Etkileşim / Nesne Tutma (Telekinezi Büyüsü ile) |
+| **Space** | A / Cross | Zıplama|
+| **E** | X / Square | Etkileşim / Ayna Döndürme / Nesne Tutma (Telekinezi ile) |
 
 ### 2.3 Ana Mekanikler
 
 #### A. Third-Person 4 Yönlü Kılıç Dövüşü (Directional Combat)
 * **Perspektif ve Görüş:** Kamera karakterin arkasında durur. Karakterin silah tutuşu ve vücut duruşu, seçilen saldırı/blok yönünü (Sağ, Sol, Yukarı, Aşağı) görsel olarak net biçimde yansıtır.
-* **Saldırı/Blok Yönleri:** Fare hareketiyle seçilen 4 ana yön doğrultusunda kılıç savrulur veya blok tutulur.
+* **Saldırı/Blok Yönleri:** Fare hareketindeki değişim ile seçilen 4 ana yön doğrultusunda kılıç savrulur veya blok tutulur.
 
-#### B. Asa ve Rün Çizim Büyüleri (Rune-Casting)
-Rün modu açıldığında kamera karakterin omuz hizasına yaklaşır (Over-the-shoulder) ve büyü çizimi ekran ortasında gerçekleşir:
-* **Telekinezi (Yerçekimi) Büyüsü:** Çevredeki nesneleri Third-Person görüş açısıyla hedefleyip yakalamayı, düşmanlara fırlatmayı veya bulmacalarda taşımayı sağlar.
-* **Portal Büyüsü:** Görüş alanındaki duvar veya yüzeylere ışınlanma kapıları açarak dikey labirent alanlarında hızlı seyahat ve aksiyon imkanı sunar.
+#### B. Asa, Rün Çizimi ve Portal Büyüleri (Rune-Casting & Spatial Magic)
+Büyü çizimi ekran ortasında gerçekleşir:
+* **Portal Büyüsü:** Görüş alanındaki yüzeylere birbirine bağlı iki portal açar. 
+  * *Aksiyon Kullanımı:* Labirent alanlarında hızlı seyahat ve tuzak aksiyon imkanı sunar.
+  * *Bulmaca Kullanımı:* Işık huzmelerini portalın içine bükerek, duvarların arkasındaki veya erişilemez odalardaki ayna/hedef sistemlerine ışığı iletmek için kullanılır.
+* **Telekinezi (Yerçekimi) Büyüsü:** Çevredeki ağır ayna bloklarını veya nesneleri tutarak doğru pozisyona taşımayı ve yerleştirmeyi sağlar.
 * **Elementel Büyüler:** Alan etkili (AoE) ateş, buz ve yıldırım rünleri.
 
-#### C. Can & Mana Sistemi
-* **Maksimum Can:** 100 (Ölüm durumunda karakter ölümsüz olduğu için zindanın son checkpoint noktasında yeniden doğar).
-* **Mana:** Büyü kullanımı mana harcar. Mana zamanla dolmaz; katledilen canavarlardan düşen kristaller toplanarak yenilenir.
+#### C. Bulmaca Sistemi: Işık, Ayna ve Portal Yönlendirme (Light & Portal Puzzles)
+* **Temel Amaç:** Odadaki/zindandaki ana ışık kaynağından (Kristal Fener) çıkan sürekli ışık huzmesini, engelleri aşarak labirentin sonundaki veya kapı mekanizmasındaki hedef kristale ulaştırmak.
+* **Bulmaca Elemanları:**
+  * **Sabit/Dönebilir Aynalar:** Etkileşim tuşu (E) ile açıları değiştirilerek ışığı 90 veya 45 derecelik açılarla yansıtan yapılar.
+  * **Taşınabilir Ayna Blokları:** Telekinezi büyüsü veya fiziksel güçle yeri değiştirilebilen dinamik aynalar.
+  * **Portal Entegrasyonu:** Doğrudan görüş açısında olmayan ya da kalın duvarların arkasında kalan alanlara ışığı aktarmak için portal yüzeylerinin kullanılması.
+  * **Işık Kırıcılar ve Renk Filtreleri:** Işık huzmesini ikiye bölen krizantem kristalleri veya kapı kilitlerinin rengine göre renk değiştiren filtreler.
+* **Keşif ve Perspektif:** Oyun alanının yapısı sayesinde oyuncu Glider ile havalanarak ışığın izlediği rotayı ve ayna açısını yüksekten gözlemleyebilir.
 
-#### D. Şeytan Yerleşkesi ve Kristal Ekonomisi
+#### D. Can & Mana Sistemi
+* **Maksimum Can:** 100 (Ölüm durumunda karakter ölümsüz olduğu için zindanın son checkpoint noktasında yeniden doğar).
+* **Mana:** Büyü kullanımı mana harcar. Mana zamanla dolmaz; katledilen canavarlardan düşen kristaller toplanarak veya bulmaca çözümlerinden elde edilen antik enerjilerle yenilenir.
+
+#### E. Şeytan Yerleşkesi ve Kristal Ekonomisi
 * **Tarafsız Şeytanlar (Neutral Demon Remnants):** Büyük savaştan sonra labirentte mahsur kalan eski şeytan askerleri. Oyuncuya saldırmazlar; kahramanın Daidalos'u yenip labirenti yok etmesini kendi özgürlükleri için tek şans olarak görürler.
 * **Kristal Kullanım Alanları:**
-  * **Anlık Mana Yenileme:** Dövüş esnasında büyü yapabilmek için toplanır.
-  * **Ticaret:** Şeytan şehrinde harcanarak yeni rün formülleri, kılıç geliştirmeleri, zırh/görsel özelleştirmeler ve harita ipuçları satın alınır.
+  * **Anlık Mana Yenileme:** Dövüş ve bulmaca esnasında büyü yapabilmek için kullanılır.
+  * **Ticaret:** Şeytan şehrinde harcanarak yeni rün formülleri, kılıç geliştirmeleri, zırh/görsel özelleştirmeler ve labirent bulmacaları için ipucu haritaları satın alınır.
 
 ---
 
 ## 3. Hikaye ve Dünya (Lore & World)
 
 ### 3.1 Özet Hikaye
-Dünyayı büyük bir felaketten kurtaran kahramanımız, zamanla kazandığı muazzam güç nedeniyle bizzat kendisi bir tehdide dönüşür. Yendiği tüm iblislerden daha korkutucu hale gelen kahramanın bu gücünden çekinen yakın dostu **Daidalos**, onu yeryüzünün altındaki sonu gelmeyen bir hapishane-labirente hapseder. 
+Dünyayı büyük bir felaketten kurtaran kahramanımız, zamanla kazandığı muazzam güç nedeniyle bizzat kendisi bir tehdide dönüşür. Yendiği tüm iblislerden daha korkutucu hale gelen kahramanın bu gücünden çekinen yakın dostu **Daidalos**, onu yeryüzünün altındaki sonu gelmeyen bir karanlığa, bir hapishane-labirente hapseder. 
 
-Ancak kahraman labirentte yalnız değildir. Yıllar önce yenilgiye uğratılan Şeytan Ordusu'nun savaştan bıkmış kalıntıları, Daidalos'un gazabından kaçarak labirentin derinliklerinde gizli bir yerleşke kurmıştır. Bu tarafsız şeytanlar, kahramanı bir düşman olarak değil, kendilerini bu sonsuz hapishaneden kurtarabilecek **tek ortak müttefik** olarak görürler. Kahraman ölümsüzdür; tek amacı bu labirentten çıkıp Daidalos ile yüzleşmektir.
+Ancak kahraman labirentte yalnız değildir. Yıllar önce yenilgiye uğrattığı Şeytan Ordusu'nun savaştan bıkmış kalıntıları, Daidalos'un gazabından kaçarak labirentin derinliklerinde gizli bir yerleşke kurmuştur. Bu tarafsız şeytanlar, kahramanı bir düşman olarak değil, kendilerini bu sonsuz hapishaneden kurtarabilecek **tek ortak müttefik** olarak görürler. Kahraman ölümsüzdür; tek amacı ışık kilitlerini çözüp labirentten çıkmak ve Daidalos ile yüzleşmektir.
 
 ### 3.2 Karakterler
-* **Ana Karakter (Protagonist):** Yeryüzünün eski koruyucusu, yaşayan en güçlü sihirli kılıç ustası. Third-Person bakış açısı sayesinde zırhı, kılıcı ve asa detayları görünür. Ölümsüzlük lanetine sahip olduğu için labirentte her öldüğünde yeniden doğar.
+* **Ana Karakter (Protagonist):** Yeryüzünün eski koruyucusu, yaşayan en güçlü sihirli kılıç ustası. Ölümsüzlük lanetine sahip olduğu için labirentte her öldüğünde yeniden doğar. Labirentin kalbine ışık götürüp kaçmayı amaçlar.
 * **Daidalos (Antagonist):** Kahramanın eski dostu, dahi bir mucit ve mimar. Dostunu bir canavara dönüşmeden önce durdurduğuna inanır ve bu sonsuz labirenti onu içeride tutmak için tasarlamıştır.
 * **Tüccar Şeytanlar (NPC'ler):**
   * *Silahkar Şeytan:* Kılıcı ve yakın dövüş kabiliyetlerini geliştirir.
@@ -88,7 +102,8 @@ Ancak kahraman labirentte yalnız değildir. Yıllar önce yenilgiye uğratılan
 
 ### 4.1 Görsel Stil
 * **Sanat Tarzı:** Stylized Low Poly / Cel-shaded (Zelda: Breath of the Wild & Genshin Impact estetiği). Karakter animasyonları Third-Person kamera açısında akıcı ve belirgin siluetlere sahiptir.
-* **Renk Paleti:** Canlı ve açık tonlar. Antik harabe yapıları, parlak kristal ışıkları ve dikey kanyonumsu açıklıklar içeren aydınlatmalar.
+* **VFX (Görsel Efektler):** Aynalardan sekerek odayı aydınlatan parlak, renkli ışık huzmeleri; portalların kenarlarındaki büyülü akışkan efektler ve rün çizim izleri.
+* **Renk Paleti:** Karanlık antik harabeler içerisinde yüksek kontrast oluşturan parıltılı kristaller, sarı/mavi ışık huzmeleri ve dikey kanyon aydınlatmaları.
 * **Referanslar:** *The Legend of Zelda: Breath of the Wild*, *Arx Fatalis*, *Mount & Blade*.
 
 ### 4.2 Ses ve Müzik
@@ -111,12 +126,13 @@ Ancak kahraman labirentte yalnız değildir. Yıllar önce yenilgiye uğratılan
 * **Oyun Motoru:** Unity 2022.3 LTS 
 * **Hedef Kare Hızı:** 60 FPS (Sabit)
 * **Temel Sistemler:** 
+  * **Light Raycast & Reflection System:** Işığın aynalardan sekmesini, açısını ve Portal ile temas ettiğinde diğer taraftan aynı açıyla çıkmasını sağlayan modüler fizik/raycast mimarisi.
   * Third-Person Karakter Kontrolcüsü (Gelişmiş animasyon harmanlama / Animation Blending).
-  * Dinamik Kamera Sistemi (Engellere takılmayan SpringArm / Camera Collision).
-  * Fizik tabanlı nesne etkileşimi (Rigidbodyi).
-  * 2D Fare çizimini 3D büyü koduna çeviren Rün Tanıma Algoritması (Gestures Recognition).
+  * Dinamik Kamera Sistemi (Engellere takılmayan SpringArm / Cinemachine Collider).
+  * Fizik tabanlı nesne etkileşimi (Rigidbody).
+  * 2D Fare çizimini 3D büyü koduna çeviren Rün Tanıma Algorithması.
   * Prosedürel Zindan Oluşturucu (Proc-Gen Dungeon Algorithm).
-  * Adaptif Boss Yapay Zekası (Pattern Recognition & Reinforcement Learning).
+  * Adaptif Boss Yapay Zekası (Counter-State Machine).
 * **Sürüm Kontrolü:** GitHub / Git LFS
 
 ---
