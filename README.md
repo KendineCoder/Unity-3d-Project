@@ -29,10 +29,8 @@
 ## 2. Oynanış ve Mekanikler (Gameplay & Mechanics)
 
 ### 2.1 Temel Döngü (Core Loop)
-```
-<img width="1012" height="186" alt="resim" src="https://github.com/user-attachments/assets/07b8a780-ff95-45c7-8cae-4f669e7dcd37" />
+<img width="1012" height="186" alt="resim" src="https://github.com/user-attachments/assets/e3b82bac-c495-4d7b-9180-326b03d0db7e" />
 
-```
 
 ### 2.2 Oyuncu Kontrolleri
 
