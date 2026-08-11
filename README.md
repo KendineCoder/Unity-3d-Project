@@ -9,20 +9,20 @@
 ## 1. Genel Bakış (Overview)
 
 ### 1.1 Yüksek Seviye Konsept (High Concept)
-*Mount & Blade* tarzı 4 yönlü yakın dövüş mekanikleri ile *Arx Fatalis* tarzı asa bazlı rün çizim sistemini **Third-Person (Üçüncü Şahıs)** kamera açısıyla birleştiren; bünyesinde ışık, ayna ve portal odaklı dikey bulmacalar, prosedürel labirentler ve tarafsız bir şeytan şehri barındıran 3D Aksiyon RPG.
+*Mount & Blade* tarzı 4 yönlü yakın dövüş mekanikleri ile *Arx Fatalis* tarzı asa bazlı rün çizim sistemini **Third-Person (Üçüncü Şahıs)** kamera açısıyla birleştiren; bünyesinde ışık, ayna ve portal odaklı bulmacalar, prosedürel labirentler,dinamik envanter yönetimi ve tarafsız bir şeytan şehri barındıran 3D Aksiyon RPG.
 
 ### 1.2 Oyun Türü ve Platform
 * **Tür:** Üçüncü Şahıs Aksiyon RPG / Dungeon Crawler (Third-Person Action RPG)
 * **Hedef Platform:** PC (Steam)
-* **Hedef Kitle:** Zorlu, ustalaşma gerektiren dövüş sistemlerini seven; karakter görüşü, dikey hareketlilik, büyü ve keşif kombinasyonlarıyla özgür oynanış arayan 16-35 yaş arası oyuncular.
+* **Hedef Kitle:** Zorlu, ustalaşma gerektiren dövüş sistemlerini seven; karakter görüşü,hareketli, büyü ve keşif kombinasyonlarıyla özgür oynanış arayan 16-35 yaş arası oyuncular.
 
 ### 1.3 Benzersiz Satış Noktaları (USP)
 * **[Özellik 1] Asa ile Rün Çizimi ve Fiziksel Büyüler:** Ekrana çizilerek yapılan büyüler sadece doğrudan hasar vermez; portal açma, nesneleri yönlendirme ve bulmaca çözme gibi çevresel etkileşimlere sahiptir.
 * **[Özellik 2] Portal ve Işık-Ayna Tabanlı Çevre Bulmacaları:** Labirentteki kilitli kapıları ve antik mekanizmaları açmak için ışık kaynaklarını, taşınabilir aynaları ve Portal büyüsünü kullanarak ışık huzmesini hedef kristale ulaştırma mekaniği.
 * **[Özellik 3] Oyuncu Pattern'lerini Öğrenen Adaptif Boss'lar:** Boss'lar oyuncunun sürekli kullandığı yönlü saldırıları veya rün alışkanlıklarını analiz ederek dövüş esnasında kendi stratejilerini değiştirir.
-* **[Özellik 4] Terk Edilmiş Şeytan Sığınağı (Güvenli Bölge / Hub):** Labirentte tıkılı kalmış, savaştan bıkmış tarafsız şeytanların kurduğu yerleşkede ticaret yapılabilir, yeni rünler öğrenilebilir ve ekipmanlar geliştirilebilir.
+* **[Özellik 4] Terk Edilmiş Şeytan Sığınağı (Güvenli Bölge / Hub):** Labirentte tıkılı kalmış, savaştan bıkmış tarafsız şeytanların kurduğu yerleşkede ticaret yapılabilir, yeni rünler öğrenilebilir ve ekipmanlar geliştirilebilir, ticaret yapılabilir.
 * **[Özellik 5] Dinamik & Prosedürel Labirent Yapısı:** Ana hikaye alanları ve Şeytan Şehri el yapımı özel alanlardan oluşurken, bu alanlar arasındaki koridorlar ve zindanlar prosedürel olarak üretilir.
-* **[Özellik 6] Glider (Süzülme Aracı) ile Dikey Keşif:** Karakter sırtından açılan Glider sayesinde labirenti yüksekten gözlemleyip rotasını çizebilir, ışık bulmacalarının çözümlerini yukarıdan analiz edebilir veya akrobatik hava hareketleri yapabilir.
+* **[Özellik 6] Glider (Süzülme Aracı):** Karakter, Glider sayesinde labirenti yüksekten gözlemleyip rotasını çizebilir, ışık bulmacalarının çözümlerini yukarıdan analiz edebilir veya akrobatik hava hareketleri yapabilir. Telekinezi büyüsü ile birleştirilip düşmanlara karşı silah olarak kullanılabilir
 
 ---
 
@@ -39,9 +39,8 @@
 | **WASD** | Sol Analog | Karakter Hareketi | Glider Hareketi
 | **Mouse** | Sağ Analog | Kamera Kontrolü / Hedefleme |
 | **Sol Tık + Fare Yönü** | RB / RT | Yönlü Yakın Dövüş Saldırısı (Farenin çekildiği yöne doğru) |
-| **Sağ Tık (Basılı Tutma)**| LB / LT | Yönlü Blok / Parry Duruşu |
-| **R Tuşu (veya Sol Tık Basılı)** | Y / Triangle | Asa İle Rün Çizim Modunu Açma (Kamera karaktere yaklaşır) |
-| **Space** | A / Cross | Zıplama|
+| **Sağ Tık + Fare Yönü (Basılı Tutma)**| LB / LT | Yönlü Blok / Parry Duruşu |
+| **Scrollwheel** | Y / Triangle | Asa İle Rün Çizim Modunu Açma |
 | **E** | X / Square | Etkileşim / Ayna Döndürme / Nesne Tutma (Telekinezi ile) |
 
 ### 2.3 Ana Mekanikler
@@ -55,7 +54,7 @@ Büyü çizimi ekran ortasında gerçekleşir:
 * **Portal Büyüsü:** Görüş alanındaki yüzeylere birbirine bağlı iki portal açar. 
   * *Aksiyon Kullanımı:* Labirent alanlarında hızlı seyahat ve tuzak aksiyon imkanı sunar.
   * *Bulmaca Kullanımı:* Işık huzmelerini portalın içine bükerek, duvarların arkasındaki veya erişilemez odalardaki ayna/hedef sistemlerine ışığı iletmek için kullanılır.
-* **Telekinezi (Yerçekimi) Büyüsü:** Çevredeki ağır ayna bloklarını veya nesneleri tutarak doğru pozisyona taşımayı ve yerleştirmeyi sağlar.
+* **Telekinezi Büyüsü:** Çevredeki ağır ayna bloklarını veya nesneleri tutarak doğru pozisyona taşımayı ve yerleştirmeyi sağlar.
 * **Elementel Büyüler:** Alan etkili (AoE) ateş, buz ve yıldırım rünleri.
 
 #### C. Bulmaca Sistemi: Işık, Ayna ve Portal Yönlendirme (Light & Portal Puzzles)
@@ -90,9 +89,9 @@ Ancak kahraman labirentte yalnız değildir. Yıllar önce yenilgiye uğrattığ
 * **Ana Karakter (Protagonist):** Yeryüzünün eski koruyucusu, yaşayan en güçlü sihirli kılıç ustası. Ölümsüzlük lanetine sahip olduğu için labirentte her öldüğünde yeniden doğar. Labirentin kalbine ışık götürüp kaçmayı amaçlar.
 * **Daidalos (Antagonist):** Kahramanın eski dostu, dahi bir mucit ve mimar. Dostunu bir canavara dönüşmeden önce durdurduğuna inanır ve bu sonsuz labirenti onu içeride tutmak için tasarlamıştır.
 * **Tüccar Şeytanlar (NPC'ler):**
-  * *Silahkar Şeytan:* Kılıcı ve yakın dövüş kabiliyetlerini geliştirir.
-  * *Rün Mimarı Şeytan:* Kristallere karşılık asayla çizilebilecek yeni rün formüllerini öğretir.
-  * *Eski Komutan:* Labirentin yapısı ve Daidalos'un adaptif boss'ları hakkında stratejik ipuçları verir.
+  * *Maden (Silahkar Şeytan):* Kılıcı ve yakın dövüş kabiliyetlerini geliştirir.
+  * *Irsus (Rün Mimarı Şeytan):* Kristallere karşılık asayla çizilebilecek yeni rün formüllerini öğretir.
+  * *Lagros (Eski Komutan Şeytan):* Labirentin yapısı ve Daidalos'un boss'ları hakkında stratejik ipuçları ve değerli pasif etki verir.
 
 ---
 
@@ -115,7 +114,6 @@ Ancak kahraman labirentte yalnız değildir. Yıllar önce yenilgiye uğrattığ
 ### 5.1 HUD (Heads-Up Display)
 * **Sol Üst:** Can Barı ve Toplanan Kristal / Mana Göstergesi.
 * **Karakter Etrafı / Sağ Alt:** Omuz hizasında duran dinamik 4 yönlü kılıç yön göstergesi (Saldırı veya blok hazırlığındayken görünür).
-* **Rün Çizim Arayüzü:** R tuşuna basıldığında kamera omuz hizasına yaklaşır, ekran hafifçe odaklanır ve imleç büyülü bir izin kalacağı fırçaya dönüşür.
 
 ---
 
@@ -137,7 +135,7 @@ Ancak kahraman labirentte yalnız değildir. Yıllar önce yenilgiye uğrattığ
 
 ## 7. Gelecek Planları ve Kapsam Dışı (Out of Scope)
 
-### Şimdilik Hariç Tutulanlar (Scope Creep Önleme)
+### Şimdilik Hariç Tutulanlar
 * Multiplayer / Online modlar (Sadece Tek Oyunculu).
 * Dış dünyada geçen geniş açık dünya haritaları (Oyun tamamen Labirent ve Şeytan Yerleşkesi odaklıdır).
 * Karmaşık diyalog seçim ağaçları (NPC'ler sadece görev vermek, hikaye anlatmak ve ticaret yapmak içindir).
