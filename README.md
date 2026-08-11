@@ -14,7 +14,7 @@
 ### 1.2 Oyun Türü ve Platform
 * **Tür:** Üçüncü Şahıs Aksiyon RPG / Dungeon Crawler (Third-Person Action RPG)
 * **Hedef Platform:** PC (Steam)
-* **Hedef Kitle:** Zorlu, ustalaşma gerektiren dövüş sistemlerini seven; karakter görüşü,hareketli, büyü ve keşif kombinasyonlarıyla özgür oynanış arayan 16-35 yaş arası oyuncular.
+* **Hedef Kitle:** Zorlu, ustalaşma gerektiren dövüş sistemlerini seven; büyü ve keşif kombinasyonlarıyla özgür ve hareketli oynanış arayan 16-35 yaş arası oyuncular.
 
 ### 1.3 Benzersiz Satış Noktaları (USP)
 * **[Özellik 1] Asa ile Rün Çizimi ve Fiziksel Büyüler:** Ekrana çizilerek yapılan büyüler sadece doğrudan hasar vermez; portal açma, nesneleri yönlendirme ve bulmaca çözme gibi çevresel etkileşimlere sahiptir.
