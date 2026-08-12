@@ -2,7 +2,7 @@
 **Sürüm:** 1.1.0  
 **Tarih:** 11 Ağustos 2026  
 **Durum:** Prototip / Geliştirme Aşaması  
-**Geliştirici / Takım:**
+**Geliştirici: Osman Oğuz Erol**
 
 ---
 
